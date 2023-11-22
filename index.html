@@ -311,28 +311,26 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formsubmit.co/7b4244c9d9b6c2f24667be7646d8b1ca" method="post" role="form"  class="php-email-form rounded-3">
+            <form class=" form-contac rounded-3" action="https://formsubmit.co/7b4244c9d9b6c2f24667be7646d8b1ca " method="post">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Nombre</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input class="form-control" type="text" name="name" id="">
                 </div>
+      
                 <div class="form-group col-md-6">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input class="form-control" type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea class="form-control" name="mensaje" id="mensaje"  rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                  <input  type="submit" value="Enviar Mensaje">
                 </div>
               </div>
-              
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" name="mensaje" id="mensaje" rows="3" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
             </form>
           </div>
 
