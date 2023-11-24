@@ -653,7 +653,7 @@ section {
   height: 600px;
 }
 .services .icon-box {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 
 .services .icon {
