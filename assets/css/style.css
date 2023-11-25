@@ -287,10 +287,17 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
 @media (max-width: 768px) {
+  #hero{
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -342,6 +349,11 @@ section {
   margin-bottom: 0;
 }
 
+@media (max-width: 768px){
+  section{
+    padding: 10px;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -649,6 +661,11 @@ section {
   padding: 0;
 }
 
+@media (max-width: 1025px) {
+  .portfolio-details{
+    height: 88vh;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
