@@ -525,6 +525,9 @@ section {
   overflow: hidden;
   z-index: 1;
 }
+.portfolio .portfolio-wrap img{
+  height: 200px;
+}
 
 .portfolio .portfolio-wrap::before {
   content: "";
