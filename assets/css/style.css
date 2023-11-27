@@ -88,6 +88,7 @@ h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+  background: linear-gradient(white 55%, black);
 }
 
 #header .profile h1 {
@@ -693,14 +694,6 @@ section {
   color: #fff;
   font-size: 24px;
   line-height: 0;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #10aa18;
 }
 
 .services .title {
