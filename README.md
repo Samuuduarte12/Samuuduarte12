@@ -1,11 +1,15 @@
 <p align="center"><img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/header.png"></p>
-<h1 align="center">Hola ,Soy Samuel Duarte 👋</h1>
+<h3 align="center">Hola ,Soy Samuel Duarte 👋</h3>
+
+  ---     
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=35&center=true&width=500&height=100&lines=Desarrollador+Web;Desarrollador+Front+End">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%8832CD32&size=30&center=true&width=500&height=100&lines=Desarrollador+Web;Desarrollador+Front+End">
 </p>
+
+  ---  
 <div>
-  <h2 align="center">Lenguages</h2>
-  <span>
+  <p align="center" size="100">Lenguages</p>
+<span>  
     <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
@@ -19,5 +23,5 @@
 </div>
 
 <div align="center">  
-  <img src="https://profile-counter.glitch.me/samuuduarte12/count.svg">
+  <!-- <img src="https://profile-counter.glitch.me/samuuduarte12/count.svg" width="5"> -->
 </div>
