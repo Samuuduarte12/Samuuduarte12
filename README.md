@@ -1,14 +1,11 @@
-<p align="center"><img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/header.png"></p>
-<h3 align="center">Hola ,Soy Samuel Duarte 👋</h3>
-
-  ---     
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%8832CD32&size=30&center=true&width=500&height=100&lines=Desarrollador+Web;Desarrollador+Front+End">
-</p>
-
-  ---  
+<p align="center"><img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/header.png" height="150" width="1000"></p>
+<h1 align="center">Hola ,Soy Samuel Duarte 👋</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%8832CD32&size=35&center=true&width=500&height=50&lines=Desarrollador+Web;Desarrollador+Front+End">
+</h1>
 <div>
-  <p align="center" size="100">Lenguages</p>
+  <br>
+  <h3 align="center" size="100">Lenguages</h3>
 <span>  
     <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
