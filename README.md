@@ -1,7 +1,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/header.png" height="150" width="1000"></p>
 <h1 align="center">Hola ,Soy Samuel Duarte 👋</h1>
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%8832CD32&size=35&center=true&width=500&height=50&lines=Web developer;Fron+tend+Developer">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%8832CD32&size=35&center=true&width=500&height=50&lines=Web+developer;Fron+tend+Developer">
 </h1>
 <div>
   <br>
