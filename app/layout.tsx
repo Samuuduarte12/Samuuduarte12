@@ -16,9 +16,12 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Portafolio | Desarrollador Frontend",
+  title: "Portafolio | SamuuDuarte12",
   description: "Portafolio profesional de desarrollador frontend con proyectos interactivos y creativos",
-    generator: 'v0.dev'
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/favicon.png", type: "image/svg+xml" }],
+  },
+  manifest: "/site.webmanifest",
 }
 
 export default function RootLayout({

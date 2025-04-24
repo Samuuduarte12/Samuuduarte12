@@ -6,7 +6,6 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiFirebase } from "react-icons/si";
 import { FaCodeFork } from "react-icons/fa6";
-import { Code2, FileJson, Braces, Layers, Atom, Paintbrush, GitBranch, Database, Cpu, Globe } from "lucide-react"
 import Link from "next/link";
 
 export function Habilidades() {
@@ -30,12 +29,12 @@ export function Habilidades() {
           key={habilidad.nombre}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
-        >
-          <Link href="" className="flex flex-col items-center justify-center p-4 rounded-lg border bg-card hover:shadow-md transition-all hover:-translate-y-1 text-center">
-            <div className="mb-2 text-primary">{habilidad.icono}</div>
-            <span className="text-sm font-medium">{habilidad.nombre}</span>
-          </Link>
+          transition={{ duration: 0.3, delay: index * 0.1 }}          
+        > 
+        <div className="flex flex-col items-center hover-card justify-center p-4 rounded-lg border bg-card hover:shadow-md transition-all hover:-translate-y-1 text-center">
+          <div className="mb-2 text-primary">{habilidad.icono}</div>
+          <span className="text-sm font-medium">{habilidad.nombre}</span>          
+        </div>
         </motion.div>
       ))}
     </div>

@@ -56,8 +56,8 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
         >
-          <Card className="overflow-hidden hover-card h-full flex flex-col">
-            <div className="relative aspect-video overflow-hidden">
+          <Card className="overflow-hidden hover-card h-full flex flex-col">          
+            <div className="relative aspect-video overflow-hidden">            
               <Image
                 src={proyecto.imagen || "/placeholder.svg"}
                 alt={proyecto.titulo}
@@ -65,18 +65,22 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
                 height={340}
                 className="object-cover transition-transform duration-500 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <div className="flex gap-2">
-                  {proyecto.tecnologias.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="bg-black/50 text-white border-none">
-                      {tech}
-                    </Badge>
-                  ))}
+              <Link href={`/proyectos/${proyecto.slug}`}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">              
+                  <div className="flex gap-2">
+                    {proyecto.tecnologias.map((tech) => (
+                      <Badge key={tech} variant="secondary" className="bg-black/50 text-white border-none">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <CardContent className="p-6 flex-grow">
-              <h3 className="text-xl font-bold mb-2">{proyecto.titulo}</h3>
+              <Link href={`/proyectos/${proyecto.slug}`}>
+                <h3 className="text-xl font-bold mb-2">{proyecto.titulo}</h3>
+              </Link>            
               <p className="text-muted-foreground">{proyecto.descripcion}</p>
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between">
@@ -86,10 +90,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
                   Código
                 </Link>
               </Button>
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm" asChild>
-                  <Link href={`/proyectos/${proyecto.slug}`}>Ver detalle</Link>
-                </Button>
+              <div className="flex gap-2">                
                 <Button size="sm" asChild>
                   <Link href={proyecto.demo} target="_blank" rel="noopener noreferrer" className="group">
                     Demo

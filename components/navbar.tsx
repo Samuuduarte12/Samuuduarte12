@@ -39,7 +39,7 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: "#inicio", label: "Inicio" },
+    { href: "/", label: "Inicio" },
     { href: "#sobre-mi", label: "Sobre mí" },
     { href: "#proyectos", label: "Proyectos" },
     { href: "#contacto", label: "Contacto" },
@@ -58,7 +58,7 @@ export function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-xl font-bold gradient-text">Samu Duarte</span>
+            <span className="text-xl font-bold gradient-text">SamuuDuarte12</span>
           </motion.div>
         </Link>
 

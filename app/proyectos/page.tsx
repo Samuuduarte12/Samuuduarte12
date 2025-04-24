@@ -11,8 +11,7 @@ export const metadata: Metadata = {
 
 export default function ProyectosPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <Navbar />
+    <div className="flex min-h-screen flex-col">      
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -27,8 +26,7 @@ export default function ProyectosPage() {
             <ProyectosGrid />
           </div>
         </section>
-      </main>
-      <Footer />
+      </main>      
     </div>
   )
 }

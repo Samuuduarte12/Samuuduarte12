@@ -1,0 +1,20 @@
+{
+  "name": "Samuel Duarte - Desarrollador Web",
+  "short_name": "SD Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#8b5cf6",
+  "background_color": "#1e1b4b",
+  "display": "standalone"
+}

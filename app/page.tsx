@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { ArrowDown, Code, ExternalLink, Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { ArrowDown, Code, ExternalLink, Github, Linkedin, Mail, Instagram } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -40,7 +40,7 @@ export default function Home() {
           animate={heroInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="container max-w-4xl text-center"
-        >
+        >         
           <Badge variant="outline" className="mb-4 px-4 py-1 text-sm font-medium">
             <span className="mr-1">👋</span> ¡Hola! Soy
           </Badge>
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" asChild>
-              <Link href="#proyectos" className="group">
+              <Link href="/proyectos" className="group">
                 Ver proyectos
                 <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
@@ -70,46 +70,36 @@ export default function Home() {
             </Button>
           </div>
           <div className="flex justify-center mt-8 gap-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <Button
-                variant="ghost"
+            <Link href="https://github.com/Samuuduarte12" target="_blank" rel="noopener noreferrer">
+              <Button                
                 size="icon"
-                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors"
+                variant="outline"
+                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors border hover:border-primary"
               >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/samu-duarte12/" target="_blank" rel="noopener noreferrer">
               <Button
-                variant="ghost"
+                variant="outline"
                 size="icon"
-                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors"
+                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors border hover:border-primary"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/samuuduarte12/" target="_blank" rel="noopener noreferrer">
               <Button
-                variant="ghost"
+                variant="outline"
                 size="icon"
-                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors"
+                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors border hover:border-primary"
               >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </Button>
-            </Link>
-            <Link href="mailto:samuel@ejemplo.com">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full hover:text-primary hover:bg-background/10 transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Button>
-            </Link>
+            </Link>            
           </div>
           <div className="flex justify-center mt-8">
             <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}>
@@ -170,16 +160,13 @@ export default function Home() {
                 </TabsList>
                 <TabsContent value="perfil" className="space-y-4">
                   <p>
-                    Soy un desarrollador frontend con más de 5 años de experiencia creando interfaces de usuario
-                    atractivas y funcionales. Me especializo en React, Next.js y diseño de experiencias interactivas.
+                    Soy Samuel, desarrollador Frontend especializado en React y Next.js. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
                   </p>
                   <p>
-                    Mi enfoque combina creatividad con soluciones técnicas sólidas, siempre buscando la mejor manera de
-                    implementar diseños que no solo se vean bien, sino que también ofrezcan una excelente experiencia de
-                    usuario.
+                    Disfruto trabajar en equipo, adaptarme a nuevos desafíos y colaborar tanto en proyectos freelance como en empresas. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo y la constancia.
                   </p>
                   <div className="pt-4">
-                    <h3 className="text-lg font-semibold mb-3">Habilidades principales</h3>
+                    <h3 className="text-lg font-semibold text-center mb-3">Habilidades</h3>
                     <Habilidades />
                   </div>
                 </TabsContent>
@@ -213,15 +200,17 @@ export default function Home() {
                 <TabsContent value="educacion" className="space-y-4">
                   <div className="space-y-4">
                     <div className="border-l-2 border-primary pl-4 pb-4">
-                      <h3 className="font-semibold">Máster en Desarrollo Web</h3>
-                      <p className="text-sm text-muted-foreground">Universidad Tecnológica | 2017 - 2018</p>
-                      <p className="mt-2">Especialización en tecnologías frontend y experiencia de usuario.</p>
+                      <h3 className="font-semibold">Curso de React JS - En curso</h3>
+                      <p className="text-sm text-muted-foreground">CoderHouse | 2/2025 - 4/2025</p>
+                      <p className="mt-2">                      
+                        Formación práctica en desarrollo de interfaces con React: componentes, hooks, routing, consumo de APIs y uso de Firebase y proyecto final.
+                      </p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
-                      <h3 className="font-semibold">Ingeniería Informática</h3>
-                      <p className="text-sm text-muted-foreground">Universidad Nacional | 2013 - 2017</p>
+                      <h3 className="font-semibold">Diseño Web - IT Bootcamp</h3>
+                      <p className="text-sm text-muted-foreground">Alkemy | 9/2023 - 11/2023</p>
                       <p className="mt-2">
-                        Formación en fundamentos de programación, algoritmos y desarrollo de software.
+                        Formación intensiva en HTML, CSS y Bootstrap enfocada en el diseño de interfaces web modernas y responsive.
                       </p>
                     </div>
                   </div>
@@ -301,67 +290,31 @@ export default function Home() {
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
                     <Mail className="h-5 w-5 mr-3 text-primary" />
-                    <span>miguel@ejemplo.com</span>
+                    <span>samu_dmatheu@live.com</span>
                   </CardContent>
                 </Card>
 
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
                     <Code className="h-5 w-5 mr-3 text-primary" />
-                    <span>github.com/miguel</span>
+                    <span>github.com/Samuuduarte12</span>
                   </CardContent>
                 </Card>
 
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
                     <Linkedin className="h-5 w-5 mr-3 text-primary" />
-                    <span>linkedin.com/in/miguel</span>
+                    <span>linkedin.com/in/samu-duarte12/</span>
                   </CardContent>
                 </Card>
 
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
-                    <Twitter className="h-5 w-5 mr-3 text-primary" />
-                    <span>twitter.com/miguel</span>
+                    <Instagram className="h-5 w-5 mr-3 text-primary" />
+                    <span>instagram.com/samuuduarte12/</span>
                   </CardContent>
                 </Card>
-              </div>
-
-              <div className="pt-4">
-                <h3 className="text-xl font-bold mb-4">Sígueme en redes</h3>
-                <div className="flex space-x-4">
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:text-primary hover:border-primary transition-colors"
-                    >
-                      <Github className="h-5 w-5" />
-                      <span className="sr-only">GitHub</span>
-                    </Button>
-                  </Link>
-                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:text-primary hover:border-primary transition-colors"
-                    >
-                      <Linkedin className="h-5 w-5" />
-                      <span className="sr-only">LinkedIn</span>
-                    </Button>
-                  </Link>
-                  <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:text-primary hover:border-primary transition-colors"
-                    >
-                      <Twitter className="h-5 w-5" />
-                      <span className="sr-only">Twitter</span>
-                    </Button>
-                  </Link>
-                </div>
-              </div>
+              </div>              
             </motion.div>
 
             <motion.div

@@ -38,7 +38,7 @@ export function AnimatedBackground() {
       "147, 112, 219", // MediumPurple
       "153, 50, 204", // DarkOrchid
       "139, 0, 139", // DarkMagenta
-      "75, 0, 130", // Indigo
+      "75, 0, 130", // Indigo      
     ]
 
     // Ajustar el tamaño del canvas al tamaño de la ventana

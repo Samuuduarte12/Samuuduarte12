@@ -30,8 +30,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
 
   if (!proyecto) {
     return (
-      <div className="flex min-h-screen flex-col">
-        <Navbar />
+      <div className="flex min-h-screen flex-col">        
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold">Proyecto no encontrado</h1>
@@ -40,8 +39,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
               <Button className="mt-4">Volver a proyectos</Button>
             </Link>
           </div>
-        </main>
-        <Footer />
+        </main>        
       </div>
     )
   }
@@ -49,12 +47,11 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
   const proyectosRelacionados = getProyectosRelacionados(params.slug)
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <Navbar />
+    <div className="flex min-h-screen flex-col">      
       <main className="flex-1">
         <article className="container px-4 py-12 md:px-6 md:py-24">
           <div className="mb-8">
-            <Link href="/proyectos" className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900">
+            <Link href="/proyectos" className="inline-flex items-center text-sm text-gray-500 hover:text-primary">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Volver a proyectos
             </Link>
@@ -62,15 +59,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
 
           <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
             <div>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{proyecto.titulo}</h1>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {proyecto.tecnologias.map((tech) => (
-                  <Badge key={tech} variant="outline">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{proyecto.titulo}</h1>              
               <div className="mt-8 aspect-video overflow-hidden rounded-lg border">
                 <Image
                   src={proyecto.imagen || "/placeholder.svg"}
@@ -79,7 +68,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                   height={675}
                   className="h-full w-full object-cover"
                 />
-              </div>
+              </div>              
 
               <div className="mt-8 space-y-6">
                 <div>
@@ -164,44 +153,20 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                     </Button>
                   )}
                 </div>
-              </div>
-
-              {proyecto.testimonios && proyecto.testimonios.length > 0 && (
-                <div className="rounded-lg border p-6">
-                  <h2 className="text-xl font-bold">Testimonios</h2>
-
-                  <div className="mt-4 space-y-4">
-                    {proyecto.testimonios.map((testimonio, index) => (
-                      <div key={index} className="space-y-2">
-                        <p className="italic text-gray-500">"{testimonio.texto}"</p>
-                        <p className="font-medium">{testimonio.autor}</p>
-                        <p className="text-sm text-gray-500">
-                          {testimonio.cargo}, {testimonio.empresa}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
+              </div> 
+              <div className="rounded-lg border p-6">
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {proyecto.tecnologias.map((tech) => (
+                    <Badge key={tech} variant="outline">
+                      {tech}
+                    </Badge>
+                  ))}
                 </div>
-              )}
+              </div>            
             </div>
           </div>
-        </article>
-
-        <section className="w-full py-12 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Proyectos relacionados</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Explora otros proyectos similares
-                </p>
-              </div>
-            </div>
-            <ProyectosRelacionados proyectos={proyectosRelacionados} />
-          </div>
-        </section>
-      </main>
-      <Footer />
+        </article>        
+      </main>      
     </div>
   )
 }
