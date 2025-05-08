@@ -2,13 +2,10 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, ExternalLink, Github } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { ProyectosRelacionados } from "@/components/proyectos-relacionados"
 import { getProyectoBySlug, getProyectosRelacionados } from "@/lib/proyectos"
+import { AnimatedBackground2 } from "@/components/Animated-Background2"
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const proyecto = getProyectoBySlug(params.slug)
@@ -30,7 +27,8 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
 
   if (!proyecto) {
     return (
-      <div className="flex min-h-screen flex-col">        
+      <div className="flex min-h-screen flex-col">     
+        <AnimatedBackground2/>
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold">Proyecto no encontrado</h1>
@@ -47,7 +45,8 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
   const proyectosRelacionados = getProyectosRelacionados(params.slug)
 
   return (
-    <div className="flex min-h-screen flex-col">      
+    <div className="flex min-h-screen flex-col">     
+      <AnimatedBackground2/> 
       <main className="flex-1">
         <article className="container px-4 py-12 md:px-6 md:py-24">
           <div className="mb-8">

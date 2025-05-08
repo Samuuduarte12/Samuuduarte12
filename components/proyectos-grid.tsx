@@ -39,7 +39,7 @@ export function ProyectosGrid() {
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between">
               <Button variant="outline" size="sm" asChild>
-                <Link href="" target="_blank" rel="noopener noreferrer">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
                   Código
                 </Link>
@@ -49,7 +49,7 @@ export function ProyectosGrid() {
                   <Link href={`/proyectos/${proyecto.slug}`}>Ver detalle</Link>
                 </Button>
                 <Button size="sm" asChild>
-                  <Link href="" target="_blank" rel="noopener noreferrer" className="group">
+                  <Link href="#" target="_blank" rel="noopener noreferrer" className="group">
                     Demo
                     <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </Link>

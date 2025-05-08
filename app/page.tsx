@@ -14,6 +14,7 @@ import { ProyectosDestacados } from "@/components/proyectos-destacados"
 import { ContactForm } from "@/components/contact-form"
 import { Habilidades } from "@/components/habilidades"
 import { TypewriterEffect } from "@/components/typewriter-effect"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export default function Home() {
   const heroRef = useRef(null)
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center">
+      <AnimatedBackground/>
       {/* Hero Section */}
       <section
         ref={heroRef}
@@ -114,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section ref={aboutRef} id="sobre-mi" className="w-full py-20 px-4">
+      <section ref={aboutRef} id="sobre-mi" className="w-full md:py-20 px-4">
         <div className="container max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,90 +135,81 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={aboutInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.2 }}
-            >
-              <Image
-                src="/profile.png"
-                alt="Miguel Ángel - Desarrollador Frontend"
-                width={500}
-                height={500}
-                className="rounded-2xl shadow-lg mx-auto"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={aboutInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.4 }}
-            >
-              <Tabs defaultValue="perfil" className="w-full">
-                <TabsList className="grid w-full grid-cols-3 mb-8">
-                  <TabsTrigger value="perfil">Perfil</TabsTrigger>
-                  <TabsTrigger value="experiencia">Experiencia</TabsTrigger>
-                  <TabsTrigger value="educacion">Educación</TabsTrigger>
-                </TabsList>
-                <TabsContent value="perfil" className="space-y-4">
-                  <p>
-                    Soy Samuel, desarrollador Frontend especializado en React y Next.js. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
-                  </p>
-                  <p>
-                    Disfruto trabajar en equipo, adaptarme a nuevos desafíos y colaborar tanto en proyectos freelance como en empresas. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo y la constancia.
-                  </p>
-                  <div className="pt-4">
-                    <h3 className="text-lg font-semibold text-center mb-3">Habilidades</h3>
-                    <Habilidades />
-                  </div>
-                </TabsContent>
-                <TabsContent value="experiencia" className="space-y-4">
-                  <div className="space-y-4">
-                    <div className="border-l-2 border-primary pl-4 pb-4">
-                      <h3 className="font-semibold">Desarrollador Frontend Senior</h3>
-                      <p className="text-sm text-muted-foreground">Empresa Tecnológica | 2021 - Presente</p>
-                      <p className="mt-2">
-                        Desarrollo de aplicaciones web utilizando React, Next.js y TypeScript. Implementación de diseños
-                        responsivos y accesibles.
-                      </p>
+          <div className="flex flex-col md:flex-row justify-center md:gap-12 w-full">
+            <div className="md:w-1/2 flex md:items-start"> 
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={aboutInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
+                <Image
+                  src="/imgPortfolio.png"
+                  alt="Samuel Duarte - Desarrollador Frontend"
+                  width={700}
+                  height={700}
+                  className="rounded-2xl shadow-lg md:mx-auto my-10 md:my-14"
+                />
+              </motion.div>
+            </div>
+            <div className="md:w-1/2">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={aboutInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, delay: 0.4 }}
+              >
+                <Tabs defaultValue="perfil">
+                  <TabsList className="grid w-full grid-cols-3 mb-8 bg-primary text-white">
+                    <TabsTrigger value="perfil">Perfil</TabsTrigger>
+                    <TabsTrigger value="experiencia">Experiencia</TabsTrigger>
+                    <TabsTrigger value="educacion">Educación</TabsTrigger>
+                  </TabsList>
+                  <TabsContent value="perfil" className="space-y-4">
+                    <p>
+                      Soy Samuel, desarrollador Frontend especializado en React y Next.js. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
+                    </p>
+                    <p>
+                      Disfruto trabajar en equipo, adaptarme a nuevos desafíos y colaborar tanto en proyectos freelance como en empresas. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo y la constancia.
+                    </p>
+                    <div className="pt-4">
+                      <h3 className="text-lg font-semibold text-center mb-3">Habilidades</h3>
+                      <Habilidades />
                     </div>
-                    <div className="border-l-2 border-primary pl-4 pb-4">
-                      <h3 className="font-semibold">Desarrollador Frontend</h3>
-                      <p className="text-sm text-muted-foreground">Agencia Digital | 2019 - 2021</p>
-                      <p className="mt-2">
-                        Creación de sitios web interactivos para clientes de diversos sectores. Implementación de
-                        animaciones y transiciones.
-                      </p>
+                  </TabsContent>
+                  <TabsContent value="experiencia" className="space-y-4">
+                    <div className="space-y-4">
+                      <div className="border-l-2 border-primary pl-4 pb-4">
+                        <h3 className="font-semibold">Frontend Developer</h3>
+                        <p className="text-sm text-muted-foreground">LFT Labs |  11/2023 - Actualmente</p>
+                        <p className="mt-2">
+                          Desarrollo de interfaces web con enfoque en diseño responsivo y buenas prácticas. Uilizando herramientas modernas como Next.js, TailwindCSS, TypeScript y Firebase.
+                        </p>
+                        <p>
+                          
+                        </p>
+                      </div>                    
                     </div>
-                    <div className="border-l-2 border-primary pl-4">
-                      <h3 className="font-semibold">Desarrollador Web Junior</h3>
-                      <p className="text-sm text-muted-foreground">Startup | 2018 - 2019</p>
-                      <p className="mt-2">
-                        Desarrollo de interfaces de usuario para aplicaciones web utilizando HTML, CSS y JavaScript.
-                      </p>
+                  </TabsContent>
+                  <TabsContent value="educacion" className="space-y-4">
+                    <div className="space-y-4">
+                      <div className="border-l-2 border-primary pl-4 pb-4">
+                        <h3 className="font-semibold">Curso de React JS - En curso</h3>
+                        <p className="text-sm text-muted-foreground">CoderHouse | 2/2025 - 4/2025</p>
+                        <p className="mt-2">                      
+                          Formación práctica en desarrollo de interfaces con React: componentes, hooks, routing, consumo de APIs y uso de Firebase y proyecto final.
+                        </p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4">
+                        <h3 className="font-semibold">Diseño Web - IT Bootcamp</h3>
+                        <p className="text-sm text-muted-foreground">Alkemy | 9/2023 - 11/2023</p>
+                        <p className="mt-2">
+                          Formación intensiva en HTML, CSS y Bootstrap enfocada en el diseño de interfaces web modernas y responsive.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </TabsContent>
-                <TabsContent value="educacion" className="space-y-4">
-                  <div className="space-y-4">
-                    <div className="border-l-2 border-primary pl-4 pb-4">
-                      <h3 className="font-semibold">Curso de React JS - En curso</h3>
-                      <p className="text-sm text-muted-foreground">CoderHouse | 2/2025 - 4/2025</p>
-                      <p className="mt-2">                      
-                        Formación práctica en desarrollo de interfaces con React: componentes, hooks, routing, consumo de APIs y uso de Firebase y proyecto final.
-                      </p>
-                    </div>
-                    <div className="border-l-2 border-primary pl-4">
-                      <h3 className="font-semibold">Diseño Web - IT Bootcamp</h3>
-                      <p className="text-sm text-muted-foreground">Alkemy | 9/2023 - 11/2023</p>
-                      <p className="mt-2">
-                        Formación intensiva en HTML, CSS y Bootstrap enfocada en el diseño de interfaces web modernas y responsive.
-                      </p>
-                    </div>
-                  </div>
-                </TabsContent>
-              </Tabs>
-            </motion.div>
+                  </TabsContent>
+                </Tabs>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

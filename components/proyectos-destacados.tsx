@@ -20,7 +20,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
       titulo: "E-commerce Moderno",
       descripcion: "Tienda online con diseño atractivo, animaciones suaves y experiencia de usuario optimizada.",
       imagen: "/ecommerce.png",
-      tecnologias: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+      tecnologias: ["React", "Next.js", "Tailwind CSS"],
       demo: "https://ejemplo.com/demo",
       github: "https://github.com/usuario/proyecto",
       slug: "ecommerce", // Añadir slug

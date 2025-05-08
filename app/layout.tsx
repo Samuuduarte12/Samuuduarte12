@@ -16,10 +16,10 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Portafolio | SamuuDuarte12",
+  title: "Portafolio | Samuuduarte12",
   description: "Portafolio profesional de desarrollador frontend con proyectos interactivos y creativos",
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/favicon.png", type: "image/svg+xml" }],
+    icon: [{ url: "/favicon2.png", type: "image/svg+xml" }],
   },
   manifest: "/site.webmanifest",
 }
@@ -32,13 +32,12 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
-        <ThemeProvider attribute="class" disableTransitionOnChange={false} storageKey="portfolio-theme">
-          <AnimatedBackground />
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+        <ThemeProvider attribute="class" disableTransitionOnChange={false} storageKey="portfolio-theme">                    
+            <div className="flex min-h-screen flex-col">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>          
           <Toaster />
         </ThemeProvider>
       </body>

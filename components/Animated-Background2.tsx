@@ -14,7 +14,7 @@ interface Particle {
   pulseSpeed: number
 }
 
-export function AnimatedBackground() {
+export function AnimatedBackground2() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -44,14 +44,15 @@ export function AnimatedBackground() {
     // Ajustar el tamaño del canvas al tamaño de la ventana
     const resizeCanvas = () => {
       canvas.width = window.innerWidth  
-      canvas.height = 3000
+      canvas.height = 1000
+      
       initParticles()
     }
 
     // Inicializar partículas
     const initParticles = () => {
       particles = []
-      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 2000), 250)
+      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 8000), 120)
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({
