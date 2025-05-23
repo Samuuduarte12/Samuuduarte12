@@ -193,15 +193,19 @@ export default function Home() {
                   <TabsContent value="educacion" className="space-y-4">
                     <div className="space-y-4">
                       <div className="border-l-2 border-primary pl-4 pb-4">
-                        <h3 className="font-semibold">Curso de React JS - En curso</h3>
-                        <p className="text-sm text-muted-foreground">CoderHouse | 2/2025 - 4/2025</p>
+                        <h3 className="font-semibold">Desarrollo Front End (React)</h3>
+                        <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>                        
+                      </div>
+                      <div className="border-l-2 border-primary pl-4 pb-4">
+                        <h3 className="font-semibold">React JS</h3>
+                        <p className="text-sm text-muted-foreground">CoderHouse | 02/2025 - 05/2025</p>
                         <p className="mt-2">                      
                           Formación práctica en desarrollo de interfaces con React: componentes, hooks, routing, consumo de APIs y uso de Firebase y proyecto final.
                         </p>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
                         <h3 className="font-semibold">Diseño Web - IT Bootcamp</h3>
-                        <p className="text-sm text-muted-foreground">Alkemy | 9/2023 - 11/2023</p>
+                        <p className="text-sm text-muted-foreground">Alkemy | 09/2023 - 11/2023</p>
                         <p className="mt-2">
                           Formación intensiva en HTML, CSS y Bootstrap enfocada en el diseño de interfaces web modernas y responsive.
                         </p>
@@ -298,14 +302,14 @@ export default function Home() {
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
                     <Linkedin className="h-5 w-5 mr-3 text-primary" />
-                    <span>linkedin.com/in/samu-duarte12/</span>
+                    <span>linkedin.com/in/samu-duarte12</span>
                   </CardContent>
                 </Card>
 
                 <Card className="hover-card">
                   <CardContent className="p-4 flex items-center">
                     <Instagram className="h-5 w-5 mr-3 text-primary" />
-                    <span>instagram.com/samuuduarte12/</span>
+                    <span>instagram.com/samuuduarte12</span>
                   </CardContent>
                 </Card>
               </div>              

@@ -48,7 +48,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
     <div className="flex min-h-screen flex-col">     
       <AnimatedBackground2/> 
       <main className="flex-1">
-        <article className="container px-4 py-12 md:px-6 md:py-24">
+        <article className="container px-4 py-12 md:px-6 md:py-0">
           <div className="mb-8">
             <Link href="/proyectos" className="inline-flex items-center text-sm text-gray-500 hover:text-primary">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -65,7 +65,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                   alt={proyecto.titulo}
                   width={1200}
                   height={675}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full"
                 />
               </div>              
 
@@ -83,30 +83,12 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                     {proyecto.desafios.map((desafio, index) => (
                       <div key={index} className="space-y-2">
                         <h3 className="font-semibold">{desafio.titulo}</h3>
-                        <p>{desafio.descripcion}</p>
+                        <p>{desafio.desafio}</p>
+                        <p>{desafio.solucion}</p>
                       </div>
                     ))}
                   </div>
-                </div>
-
-                {proyecto.imagenes && proyecto.imagenes.length > 0 && (
-                  <div>
-                    <h2 className="text-2xl font-bold">Galería</h2>
-                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                      {proyecto.imagenes.map((imagen, index) => (
-                        <div key={index} className="overflow-hidden rounded-lg border">
-                          <Image
-                            src={imagen || "/placeholder.svg"}
-                            alt={`${proyecto.titulo} - Imagen ${index + 1}`}
-                            width={600}
-                            height={400}
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                </div>                
               </div>
             </div>
 
@@ -154,7 +136,7 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                 </div>
               </div> 
               <div className="rounded-lg border p-6">
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
                   {proyecto.tecnologias.map((tech) => (
                     <Badge key={tech} variant="outline">
                       {tech}
@@ -163,6 +145,26 @@ export default function ProyectoPage({ params }: { params: { slug: string } }) {
                 </div>
               </div>            
             </div>
+          </div>
+          <div className="mt-6">
+            {proyecto.imagenes && proyecto.imagenes.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-bold">Galería</h2>
+                <div className="my-4 grid gap-4 sm:grid-cols-2">
+                  {proyecto.imagenes.map((imagen, index) => (
+                    <div key={index} className="overflow-hidden rounded-lg border">
+                      <Image
+                        src={imagen || "/placeholder.svg"}
+                        alt={`${proyecto.titulo} - Imagen ${index + 1}`}
+                        width={400}
+                        height={400}
+                        className="h-full w-full"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </article>        
       </main>      

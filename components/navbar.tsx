@@ -90,10 +90,7 @@ export function Navbar() {
                 </Link>
               </motion.li>
             ))}
-          </ul>
-          <Button asChild>
-            <Link href="#contacto">Contactar</Link>
-          </Button>
+          </ul>          
         </nav>
 
         <div className="flex items-center gap-4 md:hidden">

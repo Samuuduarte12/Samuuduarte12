@@ -13,8 +13,8 @@ export function ProyectosGrid() {
   return (
     <div className="grid gap-6 pt-8 md:grid-cols-2 lg:grid-cols-3">
       {proyectos.map((proyecto) => (
-        <Link key={proyecto.id} href={`/proyectos/${proyecto.slug}`}>
-          <Card className="overflow-hidden hover-card h-full flex flex-col">
+        <Card key={proyecto.id} className="overflow-hidden hover-card h-full flex flex-col">
+            <Link href={`/proyectos/${proyecto.slug}`}>
             <div className="relative aspect-video overflow-hidden">
               <Image
                 src={proyecto.imagen || "/placeholder.svg"}
@@ -33,31 +33,27 @@ export function ProyectosGrid() {
                 </div>
               </div>
             </div>
-            <CardContent className="p-6 flex-grow">
+            <CardContent className="p-8 flex-grow">
               <h3 className="text-xl font-bold mb-2">{proyecto.titulo}</h3>
               <p className="text-muted-foreground">{proyecto.descripcion}</p>
             </CardContent>
+        </Link>
             <CardFooter className="p-6 pt-0 flex justify-between">
               <Button variant="outline" size="sm" asChild>
-                <Link href="#" target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
-                  Código
-                </Link>
+                <Link href={`/proyectos/${proyecto.slug}`}>Ver detalle</Link>
               </Button>
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm" asChild>
-                  <Link href={`/proyectos/${proyecto.slug}`}>Ver detalle</Link>
-                </Button>
-                <Button size="sm" asChild>
-                  <Link href="#" target="_blank" rel="noopener noreferrer" className="group">
-                    Demo
-                    <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  </Link>
-                </Button>
+              <div className="flex gap-2">                
+                {proyecto.enlaceDemo && (
+                  <Button size="sm" asChild>
+                    <Link href={proyecto.enlaceDemo} target="_blank" rel="noopener noreferrer" className="group">
+                      Demo
+                      <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </Link>
+                  </Button>
+                )}
               </div>
             </CardFooter>
           </Card>                    
-        </Link>
       ))}
     </div>
   )
