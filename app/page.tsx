@@ -15,6 +15,7 @@ import { ContactForm } from "@/components/contact-form"
 import { Habilidades } from "@/components/habilidades"
 import { TypewriterEffect } from "@/components/typewriter-effect"
 import { AnimatedBackground } from "@/components/animated-background"
+import { ToastContainer } from "react-toastify"
 
 export default function Home() {
   const heroRef = useRef(null)
@@ -29,7 +30,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center">
-      <AnimatedBackground/>
+      <AnimatedBackground/>      
       {/* Hero Section */}
       <section
         ref={heroRef}
@@ -315,7 +316,7 @@ export default function Home() {
               animate={contactInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <ContactForm />
+              <ContactForm />              
             </motion.div>
           </div>
         </div>

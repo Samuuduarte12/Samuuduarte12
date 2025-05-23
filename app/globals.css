@@ -114,6 +114,9 @@
 .dark .hover-card:hover {
   box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2), 0 8px 10px -6px rgba(139, 92, 246, 0.2);
 }
+.dark .hover-car{
+  box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2), 0 8px 10px -6px rgba(139, 92, 246, 0.2);
+}
 
 .text-balance {
   text-wrap: balance;
