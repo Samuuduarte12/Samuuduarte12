@@ -40,9 +40,9 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Inicio" },
-    { href: "#sobre-mi", label: "Sobre mí" },
+    { href: "/#sobre-mi", label: "Sobre mí" },
     { href: "#proyectos", label: "Proyectos" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "/#contacto", label: "Contacto" },
   ]
 
   return (

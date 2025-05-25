@@ -11,8 +11,7 @@ export function Footer() {
           </Link>          
         </div>
         <div className="flex flex-col gap-3 text-center text-xs text-muted-foreground">          
-          <p>© 2024 SamuuDuarte12</p>
-          <p>Todos los derechos reservados.</p>
+          <p>© 2024 SamuuDuarte12</p>          
         </div>
       </div>
     </footer>

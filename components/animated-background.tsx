@@ -43,7 +43,7 @@ export function AnimatedBackground() {
 
     // Ajustar el tamaño del canvas al tamaño de la ventana
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth  
+      canvas.width = window.innerWidth
       canvas.height = 3000
       initParticles()
     }

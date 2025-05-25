@@ -13,8 +13,8 @@ export function ProyectosGrid() {
   return (
     <div className="grid gap-6 pt-8 md:grid-cols-2 lg:grid-cols-3">
       {proyectos.map((proyecto) => (
-        <Card key={proyecto.id} className="overflow-hidden hover-card h-full flex flex-col">
-            <Link href={`/proyectos/${proyecto.slug}`}>
+        <Card key={proyecto.id} className="overflow-hidden hover-card h-full flex flex-col justify-between">
+          <Link href={`/proyectos/${proyecto.slug}`}>
             <div className="relative aspect-video overflow-hidden">
               <Image
                 src={proyecto.imagen || "/placeholder.svg"}
@@ -37,7 +37,7 @@ export function ProyectosGrid() {
               <h3 className="text-xl font-bold mb-2">{proyecto.titulo}</h3>
               <p className="text-muted-foreground">{proyecto.descripcion}</p>
             </CardContent>
-        </Link>
+          </Link>
             <CardFooter className="p-6 pt-0 flex justify-between">
               <Button variant="outline" size="sm" asChild>
                 <Link href={`/proyectos/${proyecto.slug}`}>Ver detalle</Link>
