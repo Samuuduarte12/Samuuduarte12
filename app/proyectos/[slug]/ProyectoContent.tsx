@@ -147,7 +147,7 @@ export function ProyectoContent({ proyecto, proyectosRelacionados }: ProyectoCon
                         alt={`${proyecto.titulo} - Imagen ${index + 1}`}
                         width={400}
                         height={400}
-                        className="h-full w-full"
+                        className="h-full w-full cursor-pointer"
                       />
                     </div>
                   ))}
@@ -158,11 +158,11 @@ export function ProyectoContent({ proyecto, proyectosRelacionados }: ProyectoCon
         </article>                
         {imagenSeleccionada && (
           <div
-            className="fixed inset-0 z-50 flex items-end justify-center backdrop-blur-md bg-black/30"
+            className="fixed inset-0 z-50 flex items-end justify-center backdrop-blur-md bg-black/30 transition-all p-5"
             onClick={() => setImagenSeleccionada(null)}
           >
             <div
-              className="relative max-w-4xl w-full rounded-md mb-20" 
+              className="relative max-w-4xl w-full rounded-md mb-72 md:mb-20 transition-all p-6 md:p-8 bg-black" 
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -176,7 +176,7 @@ export function ProyectoContent({ proyecto, proyectosRelacionados }: ProyectoCon
                 alt="Imagen ampliada"
                 width={800}
                 height={600}
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto rounded-md shadow-lg"
               />
             </div>
           </div>

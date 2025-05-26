@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section ref={aboutRef} id="sobre-mi" className="w-full md:py-20 px-4">
+      <section ref={aboutRef} id="sobre-mi" className="w-full md:py-20 md:px-4">
         <div className="container max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -161,13 +161,13 @@ export default function Home() {
                 <Tabs defaultValue="perfil">
                   <TabsList className="grid w-full grid-cols-4 mb-8 bg-primary text-white">
                     <TabsTrigger value="perfil">Perfil</TabsTrigger>
-                    <TabsTrigger value="experiencia">Experiencia</TabsTrigger>
-                    <TabsTrigger value="educacion">Educación</TabsTrigger>
-                    <TabsTrigger value="habilidades">Habilidades</TabsTrigger>
+                    <TabsTrigger value="experiencia" className="p-2">Experiencia</TabsTrigger>
+                    <TabsTrigger value="educacion" className="p-2">Educación</TabsTrigger>
+                    <TabsTrigger value="habilidades" className="p-2">Habilidades</TabsTrigger>
                   </TabsList>
                   <TabsContent value="perfil" className="space-y-4">
                     <p>
-                      Soy Samuel, desarrollador Frontend especializado en React y Next.js. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
+                      Soy Samuel, desarrollador Frontend. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
                     </p>
                     <p>
                       A lo largo de mi trayectoria he aprendido muchísimas cosas de forma autodidacta, lo que me ha permitido crecer rápidamente y adaptarme a distintas tecnologías y metodologías. Me encanta seguir aprendiendo, explorar nuevas herramientas y adquirir experiencias que me ayuden a mejorar como profesional.
@@ -182,7 +182,7 @@ export default function Home() {
                         <h3 className="font-semibold">Frontend Developer</h3>
                         <p className="text-sm text-muted-foreground">LFT Labs |  11/2023 - Actualmente</p>
                         <p className="mt-2">
-                          Desarrollo de interfaces web con enfoque en diseño responsivo y buenas prácticas. Uilizando herramientas modernas como Next.js, TailwindCSS, TypeScript y Firebase.
+                          Diseño y desarrollo de interfaces web con foco en usabilidad, escalabilidad y diseño responsivo. Participé en la creación de plataformas web para sectores como logística, educación y cine, utilizando herramientas modernas como Next.js, Tailwind CSS, Firebase y TypeScript.
                         </p>                        
                       </div>                    
                     </div>

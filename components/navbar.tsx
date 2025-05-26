@@ -116,9 +116,6 @@ export function Navbar() {
                     </li>
                   ))}
                 </ul>
-                <Button asChild className="mt-4">
-                  <Link href="#contacto">Contactar</Link>
-                </Button>
               </nav>
             </SheetContent>
           </Sheet>
