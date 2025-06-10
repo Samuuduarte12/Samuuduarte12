@@ -168,13 +168,13 @@ export default function Home() {
                   <TabsContent value="perfil" className="space-y-4">
                     <p>
                       Soy Samuel, desarrollador Frontend. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
-                    </p>
-                    <p>
+                      <br/>
+                      <br/>
                       A lo largo de mi trayectoria he aprendido muchísimas cosas de forma autodidacta, lo que me ha permitido crecer rápidamente y adaptarme a distintas tecnologías y metodologías. Me encanta seguir aprendiendo, explorar nuevas herramientas y adquirir experiencias que me ayuden a mejorar como profesional.
-                    </p>
-                    <p>                      
-                      Disfruto trabajar en equipo, adaptarme e enfrentar nuevos desafíos y colaborar tanto en proyectos freelance como en entornos corporativos. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo, la constancia y la disciplina.
-                    </p>                    
+                      <br/>
+                      <br/>
+                      Disfruto trabajar en equipo, adaptarme, enfrentar nuevos desafíos y colaborar tanto en proyectos freelance como en entornos corporativos. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo, la constancia y la disciplina.
+                    </p>                                        
                   </TabsContent>
                   <TabsContent value="experiencia" className="space-y-4">
                     <div className="space-y-4">
