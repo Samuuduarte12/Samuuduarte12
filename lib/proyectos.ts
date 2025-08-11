@@ -123,7 +123,7 @@ const proyectos: Proyecto[] = [
     descripcion: "Sistema interno de finanzas y empleados para empresa de logística.",
     descripcionDetallada:
       "Actualmente formo parte del equipo de desarrollo del nuevo sistema de Dar-App, enfocado en la gestión financiera y de recursos humanos.",
-    imagen: "/darapp-finanzas-home.png",
+    imagen: "/proyecto-darApp.png",
     imagenes: [
 
     ],

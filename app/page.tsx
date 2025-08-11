@@ -30,20 +30,19 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center">
-      <AnimatedBackground/>      
+      <AnimatedBackground />
       {/* Hero Section */}
       <section
         ref={heroRef}
         id="inicio"
         className="w-full min-h-[90vh] flex flex-col justify-center items-center py-20 px-4 relative overflow-hidden"
-      >
-        {/* Eliminado el div de fondo que estaba cubriendo el fondo animado */}
+      >        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={heroInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="container max-w-4xl text-center"
-        >         
+        >
           <Badge variant="outline" className="mb-4 px-4 py-1 text-sm font-medium">
             <span className="mr-1">👋</span> ¡Hola! Soy
           </Badge>
@@ -74,7 +73,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center mt-8 gap-4">
             <Link href="https://github.com/Samuuduarte12" target="_blank" rel="noopener noreferrer">
-              <Button                
+              <Button
                 size="icon"
                 variant="outline"
                 className="rounded-full hover:text-primary hover:bg-background/10 transition-colors border hover:border-primary"
@@ -102,7 +101,7 @@ export default function Home() {
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Button>
-            </Link>            
+            </Link>
           </div>
           <div className="flex justify-center mt-8">
             <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}>
@@ -137,7 +136,7 @@ export default function Home() {
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-center md:gap-12 w-full">
-            <div className="md:w-1/2 flex md:items-start"> 
+            <div className="md:w-1/2 flex md:items-start">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={aboutInView ? { opacity: 1, x: 0 } : {}}
@@ -168,13 +167,13 @@ export default function Home() {
                   <TabsContent value="perfil" className="space-y-4">
                     <p>
                       Soy Samuel, desarrollador Frontend. Me apasiona crear interfaces funcionales y visualmente atractivas, siempre enfocado en ofrecer una excelente experiencia de usuario.
-                      <br/>
-                      <br/>
+                      <br />
+                      <br />
                       A lo largo de mi trayectoria he aprendido muchísimas cosas de forma autodidacta, lo que me ha permitido crecer rápidamente y adaptarme a distintas tecnologías y metodologías. Me encanta seguir aprendiendo, explorar nuevas herramientas y adquirir experiencias que me ayuden a mejorar como profesional.
-                      <br/>
-                      <br/>
+                      <br />
+                      <br />
                       Disfruto trabajar en equipo, adaptarme, enfrentar nuevos desafíos y colaborar tanto en proyectos freelance como en entornos corporativos. En mi tiempo libre, el fútbol me inspira a mantener el espíritu de equipo, la constancia y la disciplina.
-                    </p>                                        
+                    </p>
                   </TabsContent>
                   <TabsContent value="experiencia" className="space-y-4">
                     <div className="space-y-4">
@@ -183,23 +182,37 @@ export default function Home() {
                         <p className="text-sm text-muted-foreground">LFT Labs |  11/2023 - Actualmente</p>
                         <p className="mt-2">
                           Diseño y desarrollo de interfaces web con foco en usabilidad, escalabilidad y diseño responsivo. Participé en la creación de plataformas web para sectores como logística, educación y cine, utilizando herramientas modernas como Next.js, Tailwind CSS, Firebase y TypeScript.
-                        </p>                        
-                      </div>                    
+                        </p>
+                      </div>
                     </div>
                   </TabsContent>
                   <TabsContent value="educacion" className="space-y-4">
                     <div className="space-y-4">
                       <div className="border-l-2 border-primary pl-4 pb-4">
-                        <h3 className="font-semibold">Desarrollo Front End (React)</h3>
-                        <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>                        
+                        <h3 className="font-semibold">Full Stack Developer</h3>
+                        <p className="text-sm text-muted-foreground">Santander Open Academy - ITBA | Cursando</p>
+                        <p className="mt-2">
+                          Formación en desarrollo web front-end y back-end, incluyendo
+                          HTML5, CSS3, JavaScript (ES6+), Node.js, Express.js, MongoDB, Mongoose,
+                          React, React Router, Context API, JSON Web Tokens (JWT), Git, GitHub,
+                          Visual Studio Code, Postman y Slack.
+                        </p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4 pb-4">
+                        <h3 className="font-semibold">Desarrollo Front End</h3>
+                        <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>
+                        <p className="mt-2">
+                          Formación en desarrollo web front-end , incluyendo
+                          HTML5, CSS3, JavaScript, React, Git, GitHub.
+                        </p>
                       </div>
                       <div className="border-l-2 border-primary pl-4 pb-4">
                         <h3 className="font-semibold">React JS</h3>
                         <p className="text-sm text-muted-foreground">CoderHouse | 02/2025 - 05/2025</p>
-                        <p className="mt-2">                      
+                        <p className="mt-2">
                           Formación práctica en desarrollo de interfaces con React: componentes, hooks, routing, consumo de APIs y uso de Firebase y proyecto final.
                         </p>
-                        <Link href="https://e-comerce-coder-house.vercel.app/" target="_blank" className="flex  items-center hover:text-primary underline"><FaLink/>Proyecto final</Link>
+                        <Link href="https://e-comerce-coder-house.vercel.app/" target="_blank" className="flex  items-center hover:text-primary underline"><FaLink />Proyecto final</Link>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
                         <h3 className="font-semibold">Diseño Web - IT Bootcamp</h3>
@@ -287,33 +300,41 @@ export default function Home() {
 
               <div className="space-y-4">
                 <Card className="hover-card">
-                  <CardContent className="p-4 flex items-center">
-                    <Mail className="h-5 w-5 mr-3 text-primary" />
-                    <span>samu_dmatheu@live.com</span>
-                  </CardContent>
+                  <Link href="mailto:samu_dmatheu@live.com">
+                    <CardContent className="p-4 flex items-center">
+                      <Mail className="h-5 w-5 mr-3 text-primary" />
+                      <span>samu_dmatheu@live.com</span>
+                    </CardContent>
+                  </Link>
                 </Card>
 
                 <Card className="hover-card">
-                  <CardContent className="p-4 flex items-center">
-                    <Code className="h-5 w-5 mr-3 text-primary" />
-                    <span>github.com/Samuuduarte12</span>
-                  </CardContent>
+                  <Link href="https://github.com/Samuuduarte12" target="_blank">
+                    <CardContent className="p-4 flex items-center">
+                      <Code className="h-5 w-5 mr-3 text-primary" />
+                      <span>github.com/Samuuduarte12</span>
+                    </CardContent>
+                  </Link>
                 </Card>
 
                 <Card className="hover-card">
-                  <CardContent className="p-4 flex items-center">
-                    <Linkedin className="h-5 w-5 mr-3 text-primary" />
-                    <span>linkedin.com/in/samu-duarte12</span>
-                  </CardContent>
+                  <Link href="https://www.linkedin.com/in/samuduarte12/" target="_blank">
+                    <CardContent className="p-4 flex items-center">
+                      <Linkedin className="h-5 w-5 mr-3 text-primary" />
+                      <span>linkedin.com/in/samu-duarte12</span>
+                    </CardContent>
+                  </Link>
                 </Card>
 
                 <Card className="hover-card">
-                  <CardContent className="p-4 flex items-center">
-                    <Instagram className="h-5 w-5 mr-3 text-primary" />
-                    <span>instagram.com/samuuduarte12</span>
-                  </CardContent>
+                  <Link href="https://www.instagram.com/samuuduarte12/" target="_blank">
+                    <CardContent className="p-4 flex items-center">
+                      <Instagram className="h-5 w-5 mr-3 text-primary" />
+                      <span>instagram.com/samuuduarte12</span>
+                    </CardContent>
+                  </Link>
                 </Card>
-              </div>              
+              </div>
             </motion.div>
 
             <motion.div
@@ -321,7 +342,7 @@ export default function Home() {
               animate={contactInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <ContactForm />              
+              <ContactForm />
             </motion.div>
           </div>
         </div>

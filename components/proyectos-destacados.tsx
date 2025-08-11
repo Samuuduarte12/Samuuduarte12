@@ -27,11 +27,11 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
     {
       id: 2,
       titulo: "Dar-App - Sistema Financiero y control del personal",
-      descripcion: "Sistema interno de finanzas y empleados para empresa de logística. (En desarrollo)",
-      imagen: "",
+      descripcion: "Sistema interno de finanzas y empleados para empresa de logística.",
+      imagen: "/proyecto-darApp.png",
       tecnologias: ["Next.js", "Tailwind", "TypeScript", "Firebase"],
       demo: "",      
-      slug: "dar-app-finanzas", // Añadir slug
+      slug: "dar-app-finanzas",
     },
     {
       id: 3,
