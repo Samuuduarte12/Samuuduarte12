@@ -122,7 +122,7 @@ const proyectos: Proyecto[] = [
     titulo: "Dar-App - Sistema Financiero y control del personal",
     descripcion: "Sistema interno de finanzas y empleados para empresa de logística.",
     descripcionDetallada:
-      "Actualmente formo parte del equipo de desarrollo del nuevo sistema de Dar-App, enfocado en la gestión financiera y de recursos humanos.",
+      "Aplicación web desarrollada en equipo para una empresa de logística, enfocada en la gestión integral del personal y los clientes. La plataforma permite controlar las horas trabajadas del personal, calcular sueldos, registrar y administrar los paquetes de los clientes junto con sus montos, y llevar un control detallado de los ingresos y egresos de la empresa. Además, incluye un dashboard con estadísticas semanales, exportación de datos y herramientas de organización que facilitan la toma de decisiones.",
     imagen: "/proyecto-darApp.png",
     imagenes: [
 
@@ -130,8 +130,8 @@ const proyectos: Proyecto[] = [
     tecnologias: ["Next.js", "Tailwind CSS", "TypeScript", "Firebase"],
     cliente: "Proyecto desarrolado con LFT Labs",
     año: "2025",
-    duracion: "En desarrollo",
-    rol: "Frontend Developer",
+    duracion: "1 mes",
+    rol: "Full Stack Developer",
     enlaceDemo: "",    
     desafios: [
       {
@@ -139,7 +139,25 @@ const proyectos: Proyecto[] = [
         desafio:
           "Tuve que aprender y aplicar TypeScript en un entorno real, mejorando la robustez del código y la escalabilidad del proyecto.",
         solucion: ""
-      },      
+      }, 
+      {
+        titulo: "Gestión de usuarios y horarios",
+        desafio:
+          "Desarrollé múltiples CRUD completos tanto para usuarios del personal como para clientes, además de formularios específicos para la carga y gestión de horarios del personal.",
+        solucion: ""
+      }, 
+      {
+        titulo: "Resolución de errores críticos en producción",
+        desafio:
+          "Finalizado el proyecto, continué brindando soporte corrigiendo bugs reportados por el cliente. Uno de los problemas más relevantes fue la sustitución del uso de localStorage por IndexedDB, ya que el almacenamiento local se saturaba e impedía el funcionamiento de la aplicación. Investigué e implementé la migración a IndexedDB, solucionando el error en el mismo día y devolviendo la operatividad al sistema.",
+        solucion: ""
+      }, 
+      {
+        titulo: "Optimización del dashboard",
+        desafio:          
+          "Reestructuré la sección del dashboard que no funcionaba correctamente, logrando una visualización clara de los datos semanales. Incorporé gráficos de ingresos, egresos y balance, junto con tarjetas informativas que muestran la cantidad de clientes activos y el personal. Tambien agregué la opción de exportar los datos de la semana seleccionada en formato Excel.",
+        solucion: ""
+      }, 
     ]
   }, 
   {

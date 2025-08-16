@@ -190,21 +190,11 @@ export default function Home() {
                     <div className="space-y-4">
                       <div className="border-l-2 border-primary pl-4 pb-4">
                         <h3 className="font-semibold">Full Stack Developer</h3>
-                        <p className="text-sm text-muted-foreground">Santander Open Academy - ITBA | Cursando</p>
-                        <p className="mt-2">
-                          Formación en desarrollo web front-end y back-end, incluyendo
-                          HTML5, CSS3, JavaScript (ES6+), Node.js, Express.js, MongoDB, Mongoose,
-                          React, React Router, Context API, JSON Web Tokens (JWT), Git, GitHub,
-                          Visual Studio Code, Postman y Slack.
-                        </p>
+                        <p className="text-sm text-muted-foreground">Santander Open Academy - ITBA | Cursando</p>                        
                       </div>
                       <div className="border-l-2 border-primary pl-4 pb-4">
                         <h3 className="font-semibold">Desarrollo Front End</h3>
-                        <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>
-                        <p className="mt-2">
-                          Formación en desarrollo web front-end , incluyendo
-                          HTML5, CSS3, JavaScript, React, Git, GitHub.
-                        </p>
+                        <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>                        
                       </div>
                       <div className="border-l-2 border-primary pl-4 pb-4">
                         <h3 className="font-semibold">React JS</h3>
