@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/cv-samuel-duarte.pdf" download className="group">
+              <Link href="/Duarte-Samuel-CV.pdf" download className="group">
                 Descargar CV
                 <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Link>
