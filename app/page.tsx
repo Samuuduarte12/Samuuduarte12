@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/Duarte-Samuel-CV.pdf" download className="group">
+              <Link href="/CV Duarte Samuel.pdf"  download className="group">
                 Descargar CV
                 <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Link>
@@ -290,10 +290,10 @@ export default function Home() {
 
               <div className="space-y-4">
                 <Card className="hover-card">
-                  <Link href="mailto:samu_dmatheu@live.com">
+                  <Link href="mailto:samuelfrancisduarte@outlook.com">
                     <CardContent className="p-4 flex items-center">
                       <Mail className="h-5 w-5 mr-3 text-primary" />
-                      <span>samu_dmatheu@live.com</span>
+                      <span>samuelfrancisduarte@outlook.com</span>
                     </CardContent>
                   </Link>
                 </Card>
