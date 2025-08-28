@@ -290,10 +290,10 @@ export default function Home() {
 
               <div className="space-y-4">
                 <Card className="hover-card">
-                  <Link href="mailto:samuelfrancisduarte@outlook.com">
+                  <Link href="mailto:samu_dmatheu@live.com">
                     <CardContent className="p-4 flex items-center">
                       <Mail className="h-5 w-5 mr-3 text-primary" />
-                      <span>samuelfrancisduarte@outlook.com</span>
+                      <span>samu_dmatheu@live.com</span>
                     </CardContent>
                   </Link>
                 </Card>
