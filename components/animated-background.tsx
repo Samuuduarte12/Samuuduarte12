@@ -51,7 +51,7 @@ export function AnimatedBackground() {
     // Inicializar partículas
     const initParticles = () => {
       particles = []
-      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 2000), 250)
+      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 500), 120)
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({

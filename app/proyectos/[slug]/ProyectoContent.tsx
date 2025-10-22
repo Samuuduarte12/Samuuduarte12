@@ -51,7 +51,7 @@ export function ProyectoContent({ proyecto, proyectosRelacionados }: ProyectoCon
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{proyecto.titulo}</h1>              
               <div className="mt-8 aspect-video overflow-hidden rounded-lg border">
                 <Image
-                  src={proyecto.imagen || "/placeholder.svg"}
+                  src={proyecto.imagen}
                   alt={proyecto.titulo}
                   width={1200}
                   height={675}
