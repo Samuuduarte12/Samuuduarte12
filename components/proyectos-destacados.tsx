@@ -19,7 +19,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
       id: 1,
       titulo: "Black Deer Films - Sitio web Productora Audiovisual",
       descripcion: "Diseño y desarrolo completo de sitio web para productora audiovisual.",
-      imagen: "/black-deer-films.png",
+      imagen: "/black-deer-films/black-deer-films.png",
       tecnologias: ["Next.js", "Tailwind", "JavaScript", "Firebase", "Figma"],
       demo: "https://black-deer-films.vercel.app/",      
       slug: "black-deer-films",
@@ -28,7 +28,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
       id: 2,
       titulo: "Dar-App - Sistema Financiero y control del personal",
       descripcion: "Sistema interno de finanzas y empleados para empresa de logística.",
-      imagen: "/proyecto-darApp.png",
+      imagen: "/dar-app/dar-App.png",
       tecnologias: ["Next.js", "Tailwind", "TypeScript", "Firebase"],
       demo: "",      
       slug: "dar-app-finanzas",
@@ -37,7 +37,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
       id: 3,
       titulo: "Reservar Corte - App de Reservas para Peluquería",
       descripcion: "Aplicación web para reservar turnos y gestionar estadísticas de una peluquería.",
-      imagen: "/reservar-corte.png",
+      imagen: "/app-reservas/reservar-corte.png",
       tecnologias: ["Next.js", "Tailwind", "JavaScript", "Firebase"],
       demo: "https://reservar-corte.vercel.app/",      
       slug: "app-reservas-peluqueria",
@@ -56,7 +56,7 @@ export function ProyectosDestacados({ inView }: ProyectosDestacadosProps) {
           <Card className="overflow-hidden hover-card h-full flex flex-col justify-between">          
             <div className="relative aspect-video overflow-hidden">            
               <Image
-                src={proyecto.imagen || "/placeholder.svg"}
+                src={proyecto.imagen}
                 alt={proyecto.titulo}
                 width={600}
                 height={340}

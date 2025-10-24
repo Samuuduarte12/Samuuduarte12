@@ -39,10 +39,10 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: "/", label: "Inicio" },
-    { href: "/#sobre-mi", label: "Sobre mí" },
-    { href: "#proyectos", label: "Proyectos" },
-    { href: "/#contacto", label: "Contacto" },
+    { href: "/", label: "Inicio", section: "inicio" },
+    { href: "/#sobre-mi", label: "Sobre mí", section: "sobre-mi" },
+    { href: "#proyectos", label: "Proyectos", section: "proyectos" },
+    { href: "/#contacto", label: "Contacto", section: "contacto" },
   ]
 
   return (
@@ -74,11 +74,11 @@ export function Navbar() {
                 <Link
                   href={link.href}
                   className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                    activeSection === link.href.substring(1) ? "text-primary" : "text-muted-foreground"
+                    activeSection === link.section ? "text-primary" : "text-muted-foreground"
                   }`}
                 >
                   {link.label}
-                  {activeSection === link.href.substring(1) && (
+                  {activeSection === link.section && (
                     <motion.div
                       layoutId="activeSection"
                       className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
@@ -108,7 +108,7 @@ export function Navbar() {
                       <Link
                         href={link.href}
                         className={`text-lg font-medium transition-colors hover:text-primary ${
-                          activeSection === link.href.substring(1) ? "text-primary" : "text-muted-foreground"
+                          activeSection === link.section ? "text-primary" : "text-muted-foreground"
                         }`}
                       >
                         {link.label}

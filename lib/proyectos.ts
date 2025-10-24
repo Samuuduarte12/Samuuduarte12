@@ -38,9 +38,9 @@ const proyectos: Proyecto[] = [
     descripcion: "Diseño y maquetación de una plataforma de venta de cursos.",
     descripcionDetallada:
       "Colaboré en el diseño (mobile y desktop) y maquetación de varias pantallas para la plataforma educativa Somos Jardín. Se implementaron vistas responsivas y un diseño amigable para usuarios que acceden desde diferentes dispositivos.",
-    imagen: "/somos-jardin.png",
+    imagen: "/somos-jardin/somos-jardin.png",
     imagenes: [
-      "/somos-jardin-detail-1.png",
+      "/somos-jardin/somos-jardin-detail-1.png",
     ],
     tecnologias: ["Next.js", "Tailwind", "JavaScript", "Firebase", "Figma"],
     cliente: "Proyecto desarrolado con LFT Labs",
@@ -64,10 +64,10 @@ const proyectos: Proyecto[] = [
     descripcion: "Diseño y desarrolo completo de sitio web para productora audiovisual.",
     descripcionDetallada:
       "Diseñé y desarrollé por completo el sitio web de Black Deer Films, para una productora audiovisual. El proyecto incluye diseño responsivo y esta desarrollado con Next.js, Tailwind y Firebase.",
-    imagen: "/black-deer-films.png",
+    imagen: "/black-deer-films/black-deer-films.png",
     imagenes: [
-      "/black-deer-films-2.png",
-      "/black-deer-films-1.png",
+      "/black-deer-films/black-deer-films-2.png",
+      "/black-deer-films/black-deer-films-1.png",
 
     ],
     tecnologias: ["Next.js", "Tailwind", "JavaScript", "Firebase", "Figma"],
@@ -98,7 +98,7 @@ const proyectos: Proyecto[] = [
     descripcion: "Landing promocional conectada a la plataforma de cursos.",
     descripcionDetallada:
       "Diseñé y desarrollé una landing page responsive para Somos Jardín con fines promocionales. La misma se integró directamente al sistema de compra de cursos. El foco fue crear una experiencia visual atractiva y fluida.",
-    imagen: "/somos-jardin-landing.png",
+    imagen: "/somos-jardin-landing/somos-jardin-landing.png",
     imagenes: [
     ],
     tecnologias: ["Next.js", "Tailwind", "JavaScript", "Firebase", "Figma"],
@@ -123,7 +123,7 @@ const proyectos: Proyecto[] = [
     descripcion: "Sistema interno de finanzas y empleados para empresa de logística.",
     descripcionDetallada:
       "Aplicación web desarrollada en equipo para una empresa de logística, enfocada en la gestión integral del personal y los clientes. La plataforma permite controlar las horas trabajadas del personal, calcular sueldos, registrar y administrar los paquetes de los clientes junto con sus montos, y llevar un control detallado de los ingresos y egresos de la empresa. Además, incluye un dashboard con estadísticas semanales, exportación de datos y herramientas de organización que facilitan la toma de decisiones.",
-    imagen: "/proyecto-darApp.png",
+    imagen: "/dar-app/dar-App.png",
     imagenes: [
 
     ],
@@ -167,10 +167,9 @@ const proyectos: Proyecto[] = [
     descripcion: "Aplicación web para reservar turnos y gestionar estadísticas de una peluquería.",
     descripcionDetallada:
       "Aplicación web desarrollada para la gestión de reservas en una peluquería. Los clientes pueden seleccionar día y hora para reservar un turno de corte de pelo, mientras que el peluquero accede a un panel de administración donde visualiza las reservas en tiempo real y estadísticas detalladas, como ingresos semanales y cantidad de turnos. La plataforma también permite configurar horarios laborales, días no disponibles y precios del servicio.",
-    imagen: "/reservar-corte.png",
+    imagen: "/app-reservas/reservar-corte.png",
     imagenes: [
-      "/reservar-corte-1.png",
-
+      "/app-reservas/reservar-corte-1.png",
     ],
     tecnologias: ["Next.js", "Tailwind CSS", "JavaScript", "Firebase"],
     cliente: "Proyecto freelance",
@@ -213,7 +212,7 @@ const proyectos: Proyecto[] = [
     enlaceRepositorio: "https://github.com/Samuuduarte12/e-comerce-coderHouse-duarte",
     descripcionDetallada:
       "La tienda permite navegar productos por categoría, ver detalles, agregar al carrito y simular una compra.",
-    imagen: "/trendyLooks/TrendyLooks.png",
+    imagen: "/trendyLooks/trendyLooks.png",
     imagenes: [
       "/trendyLooks/trendyLooks-1.png",
       "/trendyLooks/trendyLooks-2.png",

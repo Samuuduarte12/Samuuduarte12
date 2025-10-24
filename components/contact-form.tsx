@@ -37,15 +37,17 @@ export function ContactForm() {
         body: JSON.stringify({ formData })
       });
 
-      if (response.ok) {
-        setFormData({ nombre: "", email: "", mensaje: "" })
-        setShowNotification(true)
-        setTimeout(() => setShowNotification(false), 2000)
-      }
+      if (!response.ok) {
+        throw new Error(`Error al enviar el mensaje ${response.status} ${response.statusText}`)
+      }      
+      setShowNotification(true)
+      setTimeout(() => setShowNotification(false), 2000)      
+
     } catch (error) {
       console.error("Error al enviar mensaje", error)
     }
 
+    setFormData({ nombre: "", email: "", mensaje: "" })
     setIsSubmitting(false)
   }
 
@@ -145,10 +147,10 @@ export function ContactForm() {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4 }}
             className="fixed bottom-40 right-4 bg-gray-950 opacity-70 text-white px-4 py-2 rounded-lg shadow-lg z-50"
-          >            
+          >
             <Card className="hover-car">
-              <CardContent className="p-4 flex items-center">                    
-                <span>¡Mensaje enviado con exito!</span>                
+              <CardContent className="p-4 flex items-center">
+                <span>¡Mensaje enviado con exito!</span>
               </CardContent>
             </Card>
           </motion.div>
