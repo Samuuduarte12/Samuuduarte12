@@ -1,4 +1,4 @@
-import {motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import React, { useRef } from 'react'
 import { Badge } from './ui/badge'
 import Image from 'next/image'
@@ -8,7 +8,7 @@ import { Habilidades } from './habilidades'
 import { FaLink } from "react-icons/fa6";
 
 const SobreMi = () => {
-    const aboutRef = useRef(null)    
+    const aboutRef = useRef(null)
     const aboutInView = useInView(aboutRef, { once: true })
     return (
         <section ref={aboutRef} id="sobre-mi" className="w-full md:py-20 md:px-4">
@@ -76,7 +76,9 @@ const SobreMi = () => {
                                             <h3 className="font-semibold">Frontend Developer</h3>
                                             <p className="text-sm text-muted-foreground">LFT Labs |  11/2023 - Actualmente</p>
                                             <p className="mt-2">
-                                                Diseño y desarrollo de interfaces web con foco en usabilidad, escalabilidad y diseño responsivo. Participé en la creación de plataformas web para sectores como logística, educación y cine, utilizando herramientas modernas como Next.js, Tailwind CSS, Firebase y TypeScript.
+                                                Desarrollo de interfaces responsivas utilizando Next.js y Tailwind CSS. Integración de servicios en la nube con
+                                                Firebase (Firestore, Authentication, Storage). Consumo de APIs, componentes reutilizables. Trabajo en equipo
+                                                bajo Scrum (jira, trello). Colaboración en la planificación y ejecución de proyectos web
                                             </p>
                                         </div>
                                     </div>
@@ -84,12 +86,19 @@ const SobreMi = () => {
                                 <TabsContent value="educacion" className="space-y-4">
                                     <div className="space-y-4">
                                         <div className="border-l-2 border-primary pl-4 pb-4">
-                                            <h3 className="font-semibold">Full Stack Developer</h3>
-                                            <p className="text-sm text-muted-foreground">Santander Open Academy - ITBA | Cursando</p>
+                                            <h3 className="font-semibold">Desarrollo Full Stack</h3>
+                                            <p className="text-sm text-muted-foreground">Santander Open Academy - ITBA | 08/2025 - Actualmente</p>
+                                            <p className="mt-2">
+                                                Formación en MongoDB, Express, React y Node.js, complementada con HTML, CSS y JavaScript.
+                                            </p>
                                         </div>
                                         <div className="border-l-2 border-primary pl-4 pb-4">
-                                            <h3 className="font-semibold">Desarrollo Front End</h3>
-                                            <p className="text-sm text-muted-foreground">Telecom - Digitalers | Cursando</p>
+                                            <h3 className="font-semibold">Desarrollo Frontend React</h3>
+                                            <p className="text-sm text-muted-foreground">Telecom - Digitalers | 05/2025 - 11/2025</p>
+                                            <p className="mt-2">
+                                                Formación en HTML, CSS, Bootstrap, JavaScript y React, enfocada en maquetación responsive, lógica de
+                                                programación y desarrollo de interfaces dinámicas.
+                                            </p>
                                         </div>
                                         <div className="border-l-2 border-primary pl-4 pb-4">
                                             <h3 className="font-semibold">React JS</h3>
