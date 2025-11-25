@@ -42,7 +42,7 @@ const SobreMi = () => {
                                 alt="Samuel Duarte - Desarrollador Frontend"
                                 width={700}
                                 height={700}
-                                className="rounded-2xl shadow-lg md:mx-auto my-10 md:my-14"
+                                className="rounded-2xl md:mx-auto my-10 md:my-14"
                             />
                         </motion.div>
                     </div>
