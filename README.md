@@ -7,6 +7,6 @@
   <br>
   <h3 align="center" size="100">Tecnologias</h3>
   
-  [![My Skills](https://skillicons.dev/icons?i=html,css,js,react,vite,nextjs,firebase,nodejs,express,mongodb,tailwind,bootstrap,figma,githup,git,postman,vercel)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=html,css,js,react,vite,nextjs,firebase,nodejs,express,mongodb,tailwind,bootstrap,figma,github,git,postman,vercel)](https://skillicons.dev)
 </div>
 <br>
